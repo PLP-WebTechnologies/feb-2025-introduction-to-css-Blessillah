@@ -63,5 +63,107 @@ Margins, paddings, and borders.
     </footer>
 </body>
 </html>
+/* style.css */
+
+/* --- Body and General Styles (Element Selector) --- */
+body {
+    font-family: 'Verdana', sans-serif; /* Different font */
+    line-height: 1.7;
+    margin: 25px; /* Margin for the body */
+    background-color: #e8f5e9; /* Light green background */
+    color: #212121; /* Dark text for readability */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* --- Main Content Wrapper (Class Selector) --- */
+.wrapper {
+    max-width: 900px;
+    margin: 30px auto; /* Center the wrapper with top/bottom margin */
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #c8e6c9; /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Soft shadow */
+}
+
+/* --- Heading Styles (Element Selector) --- */
+h1 {
+    color: #2e7d32; /* Dark green for headings */
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #a5d6a7; /* Dashed border for aesthetics */
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #43a047; /* Slightly lighter green for subheadings */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 5px solid #81c784; /* Left border for emphasis */
+    padding-left: 10px;
+}
+
+/* --- Paragraph Styles (Element Selector) --- */
+p {
+    margin-bottom: 20px; /* Space between paragraphs */
+    font-size: 1.05em;
+}
+
+/* --- Emphasized Text (Class Selector) --- */
+.emphasis-text {
+    color: #d32f2f; /* Red color for emphasis */
+    font-weight: bold;
+    background-color: #ffe0b2; /* Light orange background */
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* --- Image Styling (Element Selector and ID Selector) --- */
+img {
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Centers block elements */
+    margin: 25px auto; /* Margin top/bottom and auto for centering */
+    border: 5px double #66bb6a; /* Double border */
+    padding: 8px; /* Padding inside the border */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+/* --- Specific Image Styling (ID Selector) --- */
+#hero-image {
+    border-color: #1b5e20; /* Darker green border for the hero image */
+    border-style: solid; /* Solid border for this specific image */
+    max-width: 80%; /* Make it a bit smaller than 100% of its parent */
+    margin-bottom: 40px; /* More space below */
+}
+
+/* --- List Styles (Element Selector) --- */
+ul {
+    list-style-type: square; /* Square bullets */
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    background-color: #f1f8e9; /* Very light green background for list items */
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-left: 4px solid #66bb6a; /* Left border for list items */
+    border-radius: 5px;
+}
+
+/* --- Footer Styles (Element Selector) --- */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #388e3c; /* Dark green footer */
+    color: #e8f5e9; /* Light text for footer */
+    font-size: 0.9em;
+    border-top: 1px solid #2e7d32;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
 
 Happy Coding! 💻✨
