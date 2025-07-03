@@ -461,4 +461,132 @@ footer {
     border-top: 3px solid #7986cb; /* Light indigo top border */
     border-radius: 0 0 12px 12px; /* Rounded bottom corners if inside container, or just styled */
 }
+/* style.css */
+
+/* --- Universal Box Sizing Reset (Best Practice) --- */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in an element's total width and height */
+}
+
+/* --- Body and Overall Page Styling (Element Selector) --- */
+body {
+    font-family: 'Lato', sans-serif; /* Different font: A clean and modern sans-serif font */
+    line-height: 1.6; /* Improved line spacing for readability */
+    margin: 0; /* Remove default browser margin */
+    padding: 25px; /* Overall padding around the main content area */
+    background-color: #f8f9fa; /* Very light gray background */
+    color: #343a40; /* Dark gray text for good contrast */
+}
+
+/* --- Header Section Styling (Element Selector) --- */
+header {
+    background-color: #ffffff; /* White background for header */
+    padding: 20px 0; /* Vertical padding */
+    margin-bottom: 30px; /* Space below the header */
+    border-bottom: 1px solid #e0e0e0; /* Subtle bottom border */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Light shadow */
+}
+
+/* --- Main Heading Styling (Element Selector) --- */
+h1 {
+    color: #007bff; /* Vibrant blue for the main heading */
+    font-size: 3.2em; /* Larger font size */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* --- Subheading Styling (Element Selector) --- */
+h2 {
+    color: #495057; /* Darker gray for subheadings */
+    font-size: 2em; /* Good size for sections */
+    margin-top: 40px; /* Space above subheadings */
+    margin-bottom: 20px; /* Space below subheadings */
+    border-bottom: 2px dashed #ced4da; /* Dashed bottom border */
+    padding-bottom: 8px; /* Padding above dashed line */
+    text-align: left;
+}
+
+/* --- Main Content Wrapper (Class Selector) --- */
+.container {
+    max-width: 900px; /* Max width for content */
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: #ffffff; /* White background for content */
+    border: 1px solid #dee2e6; /* Light gray border */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Medium shadow for depth */
+    padding: 30px; /* Internal padding for the container */
+}
+
+/* --- Paragraph Styling (Element Selector) --- */
+p {
+    margin-bottom: 20px; /* Space between paragraphs */
+    font-size: 1.1em; /* Slightly larger text for readability */
+}
+
+/* --- Highlighted Text (Class Selector) --- */
+.highlight {
+    background-color: #fff3cd; /* Light yellow background */
+    color: #856404; /* Darker yellow/brown text */
+    font-weight: 700; /* Bold text */
+    padding: 2px 7px; /* Padding around the highlighted text */
+    border-radius: 4px; /* Slightly rounded corners for highlight */
+    border: 1px solid #ffeeba; /* Subtle border for highlight */
+}
+
+/* --- Image Styling (Element Selector and ID Selector) --- */
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Makes image a block element, allowing margin: auto for centering */
+    margin: 30px auto; /* Generous top/bottom margin, and horizontally centered */
+    border: 5px solid #28a745; /* Green solid border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 8px; /* Space between the image content and its border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* --- Specific Feature Image Styling (ID Selector) --- */
+#feature-image {
+    border-color: #dc3545; /* Red border for this specific image */
+    border-style: ridge; /* Ridge border style */
+    max-width: 70%; /* Make it slightly smaller */
+    filter: brightness(1.05); /* Slightly brighten the image */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+#feature-image:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* --- List Styling (Element Selector) --- */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin-left: 0;
+    margin-bottom: 25px;
+}
+
+ul li {
+    background-color: #e9ecef; /* Light gray background for list items */
+    margin-bottom: 10px; /* Space between list items */
+    padding: 12px 15px; /* Padding inside list items */
+    border-left: 5px solid #007bff; /* Blue left border accent */
+    border-radius: 5px; /* Rounded corners for list items */
+    font-size: 1.05em;
+}
+
+/* --- Footer Styling (Element Selector) --- */
+footer {
+    text-align: center;
+    margin-top: 50px; /* Space above the footer */
+    padding: 25px; /* Padding inside the footer */
+    background-color: #343a40; /* Dark gray footer background */
+    color: #e9ecef; /* Light gray text for footer */
+    font-size: 0.95em;
+    border-top: 3px solid #6c757d; /* Medium gray top border */
+    border-radius: 8px; /* Rounded corners for the footer block */
+}
 Happy Coding! 💻✨
