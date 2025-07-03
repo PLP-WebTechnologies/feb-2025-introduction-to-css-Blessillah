@@ -332,4 +332,133 @@ footer {
     </footer>
 </body>
 </html>
+/* style.css */
+
+/* --- General Reset & Box Sizing (Good Practice) --- */
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* --- Body and Root Page Styles (Element Selector) --- */
+body {
+    font-family: 'Open Sans', sans-serif; /* Different font: A clean, widely used sans-serif font */
+    line-height: 1.7; /* Improved readability for text */
+    margin: 0; /* Remove default browser margin */
+    padding: 30px; /* Overall padding around the content */
+    background-color: #e3f2fd; /* A very light blue background */
+    color: #3f51b5; /* A shade of indigo for primary text */
+}
+
+/* --- Main Content Container (Class Selector) --- */
+.container {
+    max-width: 1000px; /* Max width for content */
+    margin: 40px auto; /* Center the container with top/bottom margin */
+    background-color: #ffffff; /* White background for content */
+    border: 2px solid #90caf9; /* A light blue border */
+    border-radius: 12px; /* Nicely rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Soft, noticeable shadow */
+    padding: 30px; /* Internal padding for the container */
+}
+
+/* --- Primary Heading Styling (Element Selector) --- */
+h1 {
+    color: #2196f3; /* A vibrant blue for the main heading */
+    text-align: center;
+    margin-bottom: 35px; /* Space below the heading */
+    padding-bottom: 15px; /* Padding above the bottom border */
+    border-bottom: 4px double #bbdefb; /* A double line border below heading */
+    font-size: 3em; /* Larger font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); /* Subtle text shadow */
+}
+
+/* --- Secondary Heading Styling (Element Selector) --- */
+h2 {
+    color: #42a5f5; /* A slightly lighter blue for subheadings */
+    margin-top: 40px; /* More space above subheadings */
+    margin-bottom: 20px; /* Space below subheadings */
+    padding-left: 15px; /* Padding to the left of text */
+    border-left: 6px solid #64b5f6; /* Prominent left border accent */
+    font-size: 2.2em;
+}
+
+/* --- Paragraph Styling (Element Selector) --- */
+p {
+    margin-bottom: 22px; /* Consistent spacing between paragraphs */
+    font-size: 1.15em; /* Slightly larger text for readability */
+    color: #455a64; /* A dark grey-blue for body text */
+}
+
+/* --- Highlighted Text (Class Selector) --- */
+.highlight {
+    background-color: #fff9c4; /* Light yellow background for highlight */
+    color: #f57f17; /* Dark orange text for highlight */
+    font-weight: bold;
+    padding: 3px 8px; /* Padding around the highlighted text */
+    border-radius: 4px;
+}
+
+/* --- Image Styling (Element Selector and ID Selector) --- */
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Makes image a block element, allowing margin: auto for centering */
+    margin: 40px auto; /* Generous top/bottom margin, and horizontally centered */
+    border: 6px outset #81d4fa; /* An "outset" border for a 3D effect */
+    border-radius: 15px; /* More pronounced rounded corners */
+    padding: 10px; /* Space between the image content and its border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+}
+
+/* --- Specific Image Styling (ID Selector) --- */
+#gallery-image {
+    border-color: #cddc39; /* A lime green border for this specific image */
+    border-style: groove; /* A "groove" border style */
+    max-width: 75%; /* Make it slightly smaller than other images */
+    filter: grayscale(20%); /* Apply a slight grayscale effect */
+}
+
+/* --- List Styling (Element Selector) --- */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin-left: 0;
+    margin-bottom: 25px;
+}
+
+ul li {
+    background-color: #e1f5fe; /* Very light blue background for list items */
+    margin-bottom: 12px; /* Space between list items */
+    padding: 12px 20px; /* Padding inside list items */
+    border: 1px dashed #b3e5fc; /* Dashed border for each list item */
+    border-radius: 8px; /* Rounded corners for list items */
+    position: relative; /* For custom bullet */
+}
+
+/* Custom bullet point for list items */
+ul li::before {
+    content: '★'; /* Unicode star character */
+    color: #ffc107; /* Gold star */
+    font-size: 1.2em;
+    position: absolute;
+    left: 8px; /* Position the star */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ul li {
+    padding-left: 35px; /* Adjust padding to make space for the custom bullet */
+}
+
+
+/* --- Footer Styling (Element Selector) --- */
+footer {
+    text-align: center;
+    margin-top: 60px; /* More space above the footer */
+    padding: 25px; /* Padding inside the footer */
+    background-color: #1a237e; /* Dark indigo footer */
+    color: #e3f2fd; /* Light blue text for footer */
+    font-size: 1em;
+    border-top: 3px solid #7986cb; /* Light indigo top border */
+    border-radius: 0 0 12px 12px; /* Rounded bottom corners if inside container, or just styled */
+}
 Happy Coding! 💻✨
